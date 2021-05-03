@@ -9,10 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="css/event.css">
 </head>
 <body background="Assets/bg web-01.png">
-   
 
-   <div class="container mx-auto px-4 pt-6">
-   	  <div class="grid lg:grid-cols-3 gap-16">
+	<!-- template for Event Card -->
+	<template id="event-card">
+		
   <div class="wrapper antialiased text-gray-900">
     <div>
         <div class="relative -mt-16 pt-14">
@@ -47,277 +47,13 @@
         </div>
       </div>
 
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
+	</template>
+   
 
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
-        </div>
-      </div>
-      
+	<!-- container for event cards -->
+   <div class="container mx-auto px-4 pt-6">
+   	  <div class="eventContainer grid lg:grid-cols-3 gap-16">
 
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
-
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
-        </div>
-      </div>
-      
-
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
-
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
-        </div>
-      </div>
-      
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
-
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
-        </div>
-      </div>
-      
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
-
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
-        </div>
-      </div>
-     
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
-
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
-        </div>
-      </div>
-      
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
-
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
-        </div>
-      </div>
-      
-      <div class="wrapper antialiased text-gray-900">
-    <div>
-        <div class="relative -mt-16 pt-14">
-        <a class="-m-2 w-10 h-10 bg-green-500 flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-green-300 absolute " href="#">
-		<i class='text-xl fa fa-plus'></i></a>
-
-        
-       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-            New
-          </span>
-          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-        2 baths  &bull; 3 rooms
-      </div>  
-        </div>
-        
-        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-     
-      <div class="mt-1">
-        $1800
-        <span class="text-gray-600 text-sm">   /wk</span>
-      </div>
-      <div class="mt-4">
-        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-        
-      </div>  
-      </div>
-     </div>
-      <img src="Assets/woodboard.png" alt=" random imgee" class="w-full object-cover object-center rounded-lg">    
         </div>
       </div>
 
@@ -328,7 +64,13 @@
    </div>
 
 
-
+	<script>
+		const eventContainer = document.querySelector('.eventContainer'); 
+		const eventCard = document.getElementById('event-card'); 
+		for(var i = 0; i < 18; i++) {
+			eventContainer.appendChild(eventCard.content.cloneNode(true)); 
+		}
+	</script>	
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
