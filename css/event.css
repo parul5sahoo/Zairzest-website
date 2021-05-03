@@ -1,0 +1,12 @@
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	
+	background-position: center;
+
+}
+.container{
+	padding: 110px;
+}
+
